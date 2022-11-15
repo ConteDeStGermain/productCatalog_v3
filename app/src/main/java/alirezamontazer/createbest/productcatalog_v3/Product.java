@@ -41,7 +41,9 @@ public class Product {
     }
 
     public String getPrice() {
-        return String.valueOf(_price);
+        String priceAsString = String.valueOf(_price);
+        priceAsString = priceAsString.substring(0, priceAsString.length() - 2);
+        return priceAsString;
     }
 
 }
