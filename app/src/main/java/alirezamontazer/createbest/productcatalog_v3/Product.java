@@ -40,8 +40,8 @@ public class Product {
         _price = price;
     }
 
-    public double getPrice() {
-        return _price;
+    public String getPrice() {
+        return String.valueOf(_price);
     }
 
 }
